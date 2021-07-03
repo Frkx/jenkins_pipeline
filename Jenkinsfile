@@ -5,19 +5,26 @@ pipeline {
 			steps {
 				echo 'running a build phase'
 			}
-
 		}
 		stage ('Test'){
-			echo 'running a test phase'
+			steps {
+				echo 'running a build phase'
+			}
 		}
 		stage ('QA'){
-			echo 'running a qa phase'
+			steps {
+				echo 'running a build phase'
+			}
 		}
 		stage ('Deploy'){
-			echo 'running a deploy phase'
+			steps {
+				echo 'running a build phase'
+			}
 		}
 		stage ('Monitor'){
-			echo 'running a monitor phase'
+			steps {
+				echo 'running a build phase'
+			}
 		}
 	}
 }
